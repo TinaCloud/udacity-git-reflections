@@ -25,15 +25,3 @@ How might using version control make you more confident to make changes that cou
 
 Now that you have your workspace set up, what do you want to try using Git for?
 	I want to contribute to an open source project that uses Python!
-
-What happens when you initialize a repository? Why do you need to do it?
-	It adds a hidden '.git' directory, but doesn't do an initial commit (you must specify all commits, even first one)
-	inside .git directory, there is a bunch of infrastructure to keep track of the repository history
-	Here's the documentation site for more info:
-	http://git-scm.com/docs/git-init
-	You need to do it because this is what sets up the infrastructure to support the repository.
-
-How is the staging area different from the working directory and the repository?  What do you think it offers?
-	The staging area stores what items in your working directory you want to put into the repository during the next commit.
-	It offers you the control over your commits so that the changes saved are only the ones that are grouped into that logical change
-	
