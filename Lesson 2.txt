@@ -21,3 +21,8 @@ What are some situations when branches would be helpful in keeping your history 
 	When you create different versions of the program, like experimental features or foreign language support.
 	Branches keep the alternate versions separate from the main version
 	You can have a master branch that always works and is "production quality", an then have other branches for what is under development.
+
+How do the diagrams help you visualize the branch structure?
+	They illustrated the idea of reachability, and how you can checkout a previous commit to put yourself in a "detached HEAD state"
+	that can be unreachable if you checkout a commit on a named branch.  You can use git checkout -b "new_branch_name" to keep changes in
+	a detached HEAD state.
