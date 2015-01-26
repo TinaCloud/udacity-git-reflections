@@ -10,4 +10,14 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?  What do you think it offers?
 	The staging area stores what items in your working directory you want to put into the repository during the next commit.
 	It offers you the control over your commits so that the changes saved are only the ones that are grouped into that logical change
-	
+
+How can you use the staging area to make sure you have one commit per logical change?
+	by typing "git diff" you get the changes you've made to the staging area.
+	by typing "git diff --staged" you see the changes between the master and the staging area
+	by using "git add <file>" you can specify which files to add to your commit, allowing you to only add files that are part of the logical change to the next commit
+	by typing "git reset <file>" you can pull a file from the staging area in case it is not part of the logical change.
+
+What are some situations when branches would be helpful in keeping your history organized?  How would branches help?
+	When you create different versions of the program, like experimental features or foreign language support.
+	Branches keep the alternate versions separate from the main version
+	You can have a master branch that always works and is "production quality", an then have other branches for what is under development.
