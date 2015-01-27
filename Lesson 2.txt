@@ -38,4 +38,6 @@ Some personal notes on branching:
 	"git merge --abort" resets to the state prior to attempting a merge if there were issues with the merge (i.e. conflicts arrose between the two branches)
 	commit conflicts can arrise if branches are edited on different operating systems due to the line feed / CRLF difference.  To fix this use "git config --global core.autocrlf true".  More info: https://help.github.com/articles/dealing-with-line-endings/#platform-all
 	"git show <commit_id>" automatically compares ("git diff") a commit with its parent.
-	
+
+What is the result of merging two branches together?  Why do we represent it in the diagram the way we do?
+	The result is a new commit with 2 parents, one from each branch. This preserves reachability for all commits from both branches.
