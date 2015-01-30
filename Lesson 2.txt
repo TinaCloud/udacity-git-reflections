@@ -45,3 +45,13 @@ What is the result of merging two branches together?  Why do we represent it in 
 What are the pros and cons of Git's automatic merging vs. always doing merges manually?
 	Auto-merging saves a lot of time, but it is error-prone because it isn't "smart" enough to know what is the best choice of code to keep in a program when there are conflicts.  Also, if the code is edited in such a way as to move things around, it will really mess up the merge logic.
 
+To add local repository to github:
+	log on to github and click "+" sign.
+	name repository and add description (optional readme)
+	copy link of repository when done
+	"git remote add <short-name> <repository-url>" first shortname = origin by convention
+	"git push [-u] <remote-name> <branch-name>" -u sets up tracking: “Tracking” is essentially a link between a local and remote branch. When working on a local branch that tracks some other branch, you can git pull and git push without any extra arguments and git will know what to do.
+		However, git push will by default push all branches that have the same name on the remote. To limit this behavior to just the current branch, set this configuration option:
+		$ git config --global push.default tracking
+		This is to prevent accidental pushes to branches which you’re not ready to push yet.
+		For more tips: http://mislav.uniqpath.com/2010/07/git-tips/
