@@ -8,3 +8,8 @@ Why might you want to always pull changes manually rather than having Git automa
     If you're collaborating, someone else's change my be incompatible with what you're working on, or it could just confuse you when things change without you knowing.
     Also, if a recent change on github introduces a bug or security vulnerability, you would want to keep that away from your local version until it is fixed.
 
+Describe the differences between forks, clones, and branches.  When would you use one instead of another?
+    Forks are copies of a github repository onto github, with links back to the origin and tracking to see how often it's forked
+    Clones are copies of a repository (locally or on github) onto your local machine. No tracking or links to the original.
+    Branches are part of a repository that breaks from the main version. It is based on master, but has changes to it.
+
