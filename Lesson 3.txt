@@ -16,3 +16,7 @@ Describe the differences between forks, clones, and branches.  When would you us
 git fetch: pulls remote repository state into branch "origin/master", but leaves branch "master" alone
     git pull origin master = git fetch origin; git merge master origin/master
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+    You can keep track of how many commits you are ahead of the remote with git status, thus knowing if you need to push your changes
+    you can also use git fetch and git status to see if the remote repository has changes ahead of your local copy. You can then work on merging those changes
+    you can also probably do work offline more effectively because you can always look at the state of the remote (as you last saw it) for reference
