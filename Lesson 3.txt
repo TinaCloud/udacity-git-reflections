@@ -13,3 +13,6 @@ Describe the differences between forks, clones, and branches.  When would you us
     Clones are copies of a repository (locally or on github) onto your local machine. No tracking or links to the original.
     Branches are part of a repository that breaks from the main version. It is based on master, but has changes to it.
 
+git fetch: pulls remote repository state into branch "origin/master", but leaves branch "master" alone
+    git pull origin master = git fetch origin; git merge master origin/master
+
